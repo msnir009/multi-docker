@@ -8,7 +8,7 @@ before_install:
     - docker build -t msekeran/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-    - docker run -e CI=true msekeran/react-test npm test
+    - docker run msekeran/react-test npm test -- --coverage
 
 after_success:
     - docker build -t msekeran/multi-client ./client
