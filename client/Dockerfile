@@ -4,9 +4,9 @@ WORKDIR '/app'
 COPY package*.json ./
 
 
-
+RUN npm config set proxy rgb-proxy.avl.com:8080
+RUN npm config set https-proxy rgb-proxy.avl.com:8080
 RUN npm install
-RUN npm install -D jest-dom
 COPY . .
 RUN npm run build
 
