@@ -17,14 +17,14 @@
         },
         {
             "name": "worker",
-            "image": "mssekeran/multi-worker",
+            "image": "msekeran/multi-worker",
             "hostname": "worker",
             "essential": false,
             "memory": 128
         },
         {
             "name": "nginx",
-            "image": "mssekeran/multi-nginx",
+            "image": "msekeran/multi-nginx",
             "hostname": "nginx", 
             "essential": true, 
             "portMappings": [
